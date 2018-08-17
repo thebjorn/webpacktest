@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Testing various packaging options for webpack.",
   "main": "dist/dk.js",
-  "module": "src/index.umd.js",
+  "module": "src/index.commonjs.js",
   "scripts": {
     "test": "jest",
     "build": "webpack"
