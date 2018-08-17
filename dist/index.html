@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="dk.js"></script>
+</head>
+<body>
+    <p><label><input type="text" value="ERROR" id="dk"> dk.__version__           </label></p>
+    <!--<p><label><input type="text" value="ERROR" id="dk-default"> dk.default.__version__   </label></p>-->
+    <!--<p><label><input type="text" value="ERROR" id="dk-dk"> dk.dk.__version__        </label></p>-->
+    <script>
+        $(function () {
+            try {
+                document.getElementById('dk').value = dk.__version__ === 42 ? 'found' : 'no';
+            } catch (error) {}
+            // try {
+            //     document.getElementById('dk-default').value = dk.default.__version__ === 42 ? 'found' : 'no';
+            // } catch (error) {}
+            // try {
+            //     document.getElementById('dk-dk').value = dk.dk.__version__ === 42 ? 'found' : 'no';
+            // } catch (error) {}
+
+            $('body').addClass('done');
+        });
+    </script>
+</body>
+</html>
+
