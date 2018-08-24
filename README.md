@@ -22,3 +22,9 @@ non-default exports:
     import ... from '...';
     
     module.exports = {..}
+
+check `src/core/index.js` for an example.
+
+nodejs modules
+
+    import * as path from 'path';
